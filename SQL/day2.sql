@@ -231,4 +231,4 @@ FROM city
 GROUP BY countrycode
 HAVING max_pop > avg(population)
 ORDER BY max_pop DESC
-60LIMIT 5 ;
+LIMIT 5 ;
