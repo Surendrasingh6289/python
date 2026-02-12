@@ -67,7 +67,7 @@ ON city.`CountryCode`=country.`Code`;
 select `CountryCode`,count(name) as total_city
 from city
 GROUP BY `CountryCode`
-HAVING COUNT(`Name`)>10
+HAVING COUNT(`Name`)>10;
 --Count how many cities exist in each country and display only those countries where
 --the number of cities is greater than 10.
 
@@ -82,7 +82,7 @@ WHERE `IsOfficial`='T'
 SELECT city.`Name` as city_name,country.`Continent`
 FROM city
 JOIN country
-ON city.`CountryCode`=country.`Code`
+ON city.`CountryCode`=country.`Code`;
 --Find all cities and their corresponding continent by joining the City table with the
 --Country table.
 
@@ -104,7 +104,7 @@ SELECT country.`Name` as country_name,
 city.`Name` as city_name
 FROM country
 LEFT JOIN city
-ON country.`Code`=city.`CountryCode`
+ON country.`Code`=city.`CountryCode`;
 --Retrieve all countries and their respective cities, ensuring that even countries without
 --cities are included.
 
@@ -115,17 +115,28 @@ ON country.`Code`=countrylanguage.`CountryCode` ;
 --Get a list of all countries along with their official language, ensuring that countries
 --without languages are also included.
 
-
+SELECT country.`Name`,COUNT(countrylanguage.`Language`)
+FROM country
+LEFT JOIN countrylanguage
+ON country.`Code`=countrylanguage.`CountryCode`
+GROUP BY country.`Name`
+;
 --18) Fetch the total number of languages spoken in each country, including countries with
 --no known languages.
 
 SELECT city.`Name`,country.`Name`,country.`Continent`
 FROM city
-Left JOIN country
+LEFT JOIN country
 ON city.`CountryCode`=country.`Code`;
 --19) Retrieve a list of all cities along with their country name and continent, including
 --cities without country details.
 
+SELECT country.`Name`
+FROM country
+JOIN countrylanguage
+ON country.`Code`=countrylanguage.`CountryCode`
+AND countrylanguage.`IsOfficial`='T'
+WHERE countrylanguage.`IsOfficial` IS NULL;
 
 --20) Find all countries that do not have any official languages listed in the
 --CountryLanguage table.
