@@ -1,4 +1,4 @@
--- Active: 1770635952694@@127.0.0.1@3306
+`1-- Active: 1770635952694@@127.0.0.1@3306
 USE grow_tech;
 CREATE TABLE student_2(
     id INT PRIMARY KEY,
