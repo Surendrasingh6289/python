@@ -1,3 +1,4 @@
+-- Active: 1770635952694@@127.0.0.1@3306@world
 use world;
 
 SELECT *,
@@ -125,7 +126,7 @@ SELECT name
 FROM country
 where code in (SELECT countrycode
 FROM countrylanguage
-WHERE language ='English' and isOfficial ='T')
+WHERE language ='English' and isOfficial ='T');
 --List countries where the official language is English and population is greater than the `Code`average population of English-speaking countries.
 
 SELECT `CountryCode`, count(name)
