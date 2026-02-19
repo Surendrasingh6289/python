@@ -1,6 +1,6 @@
-# Python Practice & Assignments
+# Python, SQL Practice & Datasets
 
-This repository contains my **Python learning and practice notebooks**, covering core Python concepts from basics to intermediate level. Each topic is organized into separate Jupyter Notebook (`.ipynb`) files for clarity and easy revision.
+This repository contains my learning and practice materials for Python, SQL and datasets for ML/analysis. Content is organized into folders and Jupyter notebooks for easy study and experimentation.
 
 ---
 
@@ -8,97 +8,99 @@ This repository contains my **Python learning and practice notebooks**, covering
 
 ```
 .
-├── AssignmentConditional.ipynb
-├── AssignmentList.ipynb
-├── AssignmentLoops.ipynb
-├── AssignmentString.ipynb
-├── comprehension.ipynb
-├── ConditionalStatement.ipynb
-├── dict.ipynb
-├── functions.ipynb
-├── list.ipynb
-├── loops.ipynb
-├── operators.ipynb
-├── sets.ipynb
-├── strings.ipynb
-├── tuple.ipynb
-├── TypeCasting.ipynb
-├── variable_datatype.ipynb
-└── README.md
+├── README.md
+├── SQL/
+│   ├── assignment_sql.sql
+│   ├── datetime.sql
+│   ├── day1.sql
+│   ├── day2.sql
+│   ├── day3.sql
+│   ├── leetcode.sql
+│   ├── Sql file.sql
+│   ├── sql_practice.sql
+│   ├── subqueries.sql
+│   └── transaction.sql
+├── Datasets/
+│   ├── (many CSVs e.g. iris.csv, diabetes.csv, Titanic-Dataset.csv, ... )
+│   ├── Pizza Sales DB/
+│   │   ├── order_details.csv
+│   │   ├── orders.csv
+│   │   ├── pizza_analysis.sql
+│   │   ├── pizza_sales.csv
+│   │   ├── pizza_types.csv
+│   │   └── pizzas.csv
+│   ├── pizza_sales/
+│   │   └── pizza_sales/ (order_details.csv, orders.csv, pizza_types.csv, pizzas.csv)
+│   ├── car+evaluation/ (car.names, car.c45-names)
+│   ├── forest+fires/ (forestfires.csv)
+│   └── mushroom (1)/ (agaricus-lepiota.names, expanded.Z, README)
+└── python/
+    ├── core_python/
+    │   ├── AssignmentConditional.ipynb
+    │   ├── AssignmentDIctionary.ipynb
+    │   ├── AssignmentFunction.ipynb
+    │   ├── AssignmentList.ipynb
+    │   ├── AssignmentLoops.ipynb
+    │   ├── AssignmentRegex.ipynb
+    │   ├── AssignmentString.ipynb
+    │   ├── comprehention.ipynb
+    │   ├── ConditionalStatement.ipynb
+    │   ├── csv_python.ipynb
+    │   ├── dict.ipynb
+    │   ├── exception_handling.ipynb
+    │   ├── file_handling.ipynb
+    │   ├── functions.ipynb
+    │   ├── list.ipynb
+    │   ├── loops.ipynb
+    │   ├── mo_dule.ipynb
+    │   ├── Module.py
+    │   ├── new_penguin.csv
+    │   ├── oops.ipynb
+    │   ├── operators.ipynb
+    │   ├── regular_expression.ipynb
+    │   ├── sets.ipynb
+    │   ├── strings.ipynb
+    │   ├── Surendra.txt
+    │   ├── tkir.py
+    │   ├── tuple.ipynb
+    │   ├── TypeCasting.ipynb
+    │   └── variable_datatype.ipynb
+    ├── library/
+    │   ├── mat_plotlib.ipynb
+    │   ├── nu_mpy.ipynb
+    │   ├── pa_ndas.ipynb
+    │   ├── plot_ly.ipynb
+    │   └── webscraping.ipynb
+    └── web_scrape/ (empty or in-progress)
 ```
 
 ---
 
 ## 🧠 Topics Covered
 
-### 🔹 Python Basics
-
-* Variables and Data Types
-* Type Casting
-* Operators
-
-### 🔹 Control Flow
-
-* Conditional Statements (`if`, `elif`, `else`)
-* Looping (`for`, `while`)
-
-### 🔹 Data Structures
-
-* Lists
-* Tuples
-* Sets
-* Dictionaries
-* Strings
-
-### 🔹 Advanced Concepts
-
-* Functions
-* List Comprehension
-
-### 🔹 Assignments
-
-* Conditional-based problems
-* Loop-based problems
-* String manipulation
-* List operations
-
-Each assignment notebook contains **practice questions with logic-based solutions**, mostly avoiding built-in shortcuts to strengthen fundamentals.
+- Python core concepts: variables, data types, control flow, functions, OOP, file handling, regex, exceptions
+- Data structures: lists, tuples, sets, dicts, strings
+- Libraries: NumPy, Pandas, Matplotlib, Plotly, web scraping
+- SQL: queries, subqueries, transactions, practice problems, LeetCode SQL
+- Datasets: many CSV datasets for practice, EDA and ML experiments
 
 ---
 
 ## 🛠 Tools Used
 
-* **Python 3**
-* **Jupyter Notebook**
-* **VS Code**
-
----
-
-## 🎯 Purpose
-
-* Strengthen Python fundamentals
-* Practice logic-building without relying on built-in methods
-* Prepare for exams, interviews, and coding tests
+- Python 3, Jupyter Notebook, VS Code, SQLite/MySQL (SQL practice)
 
 ---
 
 ## 🚀 How to Use
 
 1. Clone the repository
-2. Open the folder in VS Code or Jupyter Notebook
-3. Run notebooks cell by cell and experiment with the code
-
----
-
-## 📌 Notes
-
-* Code is written with a **beginner-friendly and exam-oriented approach**
-* Focus is on clarity and understanding, not just short solutions
+2. Open the folder in VS Code or Jupyter
+3. Run notebooks or SQL files and explore datasets in Datasets/
 
 ---
 
 ## 📧 Author
 
 **Surendra Singh**
-
-Learning Python step by step, focusing on logic, clarity, and consistency.
+Learning Python, SQL and data analysis step by step.

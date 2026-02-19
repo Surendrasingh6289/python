@@ -131,12 +131,12 @@ ON city.`CountryCode`=country.`Code`;
 --19) Retrieve a list of all cities along with their country name and continent, including
 --cities without country details.
 
-SELECT country.`Name`
+SELECT country.name
 FROM country
 JOIN countrylanguage
-ON country.`Code`=countrylanguage.`CountryCode`
-AND countrylanguage.`IsOfficial`='T'
-WHERE countrylanguage.`IsOfficial` IS NULL;
+ON country.code =countrylanguage.countrycode
+AND countrylanguage.IsOfficial=T
+WHERE countrylanguage.IsOfficial IS NULL;
 
 --20) Find all countries that do not have any official languages listed in the
 --CountryLanguage table.
