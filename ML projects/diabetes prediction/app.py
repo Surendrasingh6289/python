@@ -9,7 +9,7 @@ def main():
     st.title("Diabetes Prediction")
     st.header("Machine Learning project",divider='red')
 
-    model = joblib.load("LogisticModel.sav")
+    model = pickle.load("LogisticModel.sav")
 
 
     Pregnancy = st.number_input("Pregnancies",min_value=0,max_value=17)
